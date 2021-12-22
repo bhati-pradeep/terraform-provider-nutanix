@@ -328,6 +328,8 @@ github.com/hashicorp/terraform-plugin-docs v0.5.1 h1:WwrUcamix9x0TqfTw/WGHMRqoTe
 github.com/hashicorp/terraform-plugin-docs v0.5.1/go.mod h1:SQwEgy0/B0UPQ07rNEG1Wpt6E3jvRcCwkVHPNybGgc0=
 github.com/hashicorp/terraform-plugin-go v0.2.1 h1:EW/R8bB2Zbkjmugzsy1d27yS8/0454b3MtYHkzOknqA=
 github.com/hashicorp/terraform-plugin-go v0.2.1/go.mod h1:10V6F3taeDWVAoLlkmArKttR3IULlRWFAGtQIQTIDr4=
+github.com/hashicorp/terraform-plugin-sdk v1.17.2 h1:V7DUR3yBWFrVB9z3ddpY7kiYVSsq4NYR67NiTs93NQo=
+github.com/hashicorp/terraform-plugin-sdk v1.17.2/go.mod h1:wkvldbraEMkz23NxkkAsFS88A1R9eUiooiaUZyS6TLw=
 github.com/hashicorp/terraform-plugin-sdk/v2 v2.4.3 h1:DGnxpIYRHXQZb2TOlQ1OCEYxoRQrAcbLIcYm8kvbFuU=
 github.com/hashicorp/terraform-plugin-sdk/v2 v2.4.3/go.mod h1:5wrrTcxbSaQXamCDbHZTHk6yTF9OEZaOvQ9fvLXBE3o=
 github.com/hashicorp/yamux v0.0.0-20180604194846-3520598351bb/go.mod h1:+NfK9FKeTrX5uv1uIXGdwYDTeHna2qgaIlx54MXqjAM=

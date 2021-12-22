@@ -1,6 +1,7 @@
 package nutanix
 
 import (
+"context"
 	"errors"
 	"fmt"
 	"log"

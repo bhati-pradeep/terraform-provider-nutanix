@@ -1,6 +1,7 @@
 package nutanix
 
 import (
+"context"
 	"fmt"
 	"log"
 	"strconv"

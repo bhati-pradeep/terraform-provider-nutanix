@@ -617,7 +617,7 @@ func getImageResource(d *schema.ResourceData, image *v3.ImageResources) error {
 
 func resourceImageInstanceStateUpgradeV0(is map[string]interface{}, meta interface{}) (map[string]interface{}, error) {
 	log.Printf("[DEBUG] Entering resourceImageInstanceStateUpgradeV0")
-	return resourceNutanixCategoriesMigrateState(is, meta)
+	return resourceNutanixCategoriesMigrateState(context.TODO(), is, meta)
 }
 
 func resourceNutanixImageInstanceResourceV0() *schema.Resource {

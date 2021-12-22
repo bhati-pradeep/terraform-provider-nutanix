@@ -1,11 +1,12 @@
 package nutanix
 
 import (
+	"context"
 	"log"
 	"sort"
 )
 
-func resourceNutanixCategoriesMigrateState(rawState map[string]interface{}, meta interface{}) (map[string]interface{}, error) {
+func resourceNutanixCategoriesMigrateState(ctx context.Context, rawState map[string]interface{}, meta interface{}) (map[string]interface{}, error) {
 	if len(rawState) == 0 || rawState == nil {
 		log.Println("[DEBUG] Empty InstanceState; nothing to migrate.")
 		return rawState, nil

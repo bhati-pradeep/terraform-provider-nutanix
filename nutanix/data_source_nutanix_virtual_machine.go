@@ -821,7 +821,7 @@ func dataSourceNutanixVirtualMachineRead(d *schema.ResourceData, meta interface{
 
 func resourceDatasourceVirtualMachineInstanceStateUpgradeV0(is map[string]interface{}, meta interface{}) (map[string]interface{}, error) {
 	log.Printf("[DEBUG] Entering resourceDatasourceDatasourceVirtualMachineInstanceStateUpgradeV0")
-	return resourceNutanixCategoriesMigrateState(is, meta)
+	return resourceNutanixCategoriesMigrateState(context.TODO(), is, meta)
 }
 
 func resourceNutanixDatasourceVirtualMachineInstanceResourceV0() *schema.Resource {

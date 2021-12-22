@@ -1093,7 +1093,7 @@ func findClusterByName(conn *v3.Client, name string) (*v3.ClusterIntentResponse,
 
 func resourceDatasourceClusterStateUpgradeV0(is map[string]interface{}, meta interface{}) (map[string]interface{}, error) {
 	log.Printf("[DEBUG] Entering resourceDatasourceClusterStateUpgradeV0")
-	return resourceNutanixCategoriesMigrateState(is, meta)
+	return resourceNutanixCategoriesMigrateState(context.TODO(), is, meta)
 }
 
 func resourceNutanixDatasourceClusterResourceV0() *schema.Resource {

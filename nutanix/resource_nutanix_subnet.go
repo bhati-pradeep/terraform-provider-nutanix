@@ -803,7 +803,7 @@ func getSubnetResources(d *schema.ResourceData, subnet *v3.SubnetResources) {
 
 func resourceSubnetInstanceStateUpgradeV0(is map[string]interface{}, meta interface{}) (map[string]interface{}, error) {
 	log.Printf("[DEBUG] Entering resourceSubnetInstanceStateUpgradeV0")
-	return resourceNutanixCategoriesMigrateState(is, meta)
+	return resourceNutanixCategoriesMigrateState(context.TODO(), is, meta)
 }
 
 func resourceNutanixSubnetInstanceResourceV0() *schema.Resource {

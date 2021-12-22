@@ -1357,7 +1357,7 @@ func dataSourceNutanixNetworkSecurityRuleRead(d *schema.ResourceData, meta inter
 
 func resourceDatasourceNetworkSecurityRuleStateUpgradeV0(is map[string]interface{}, meta interface{}) (map[string]interface{}, error) {
 	log.Printf("[DEBUG] Entering resourceDatasourceNetworkSecurityRuleStateUpgradeV0")
-	return resourceNutanixCategoriesMigrateState(is, meta)
+	return resourceNutanixCategoriesMigrateState(context.TODO(), is, meta)
 }
 
 func resourceNutanixDatasourceNetworkSecurityRuleResourceV0() *schema.Resource {

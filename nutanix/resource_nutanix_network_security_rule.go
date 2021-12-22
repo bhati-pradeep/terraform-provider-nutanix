@@ -1609,7 +1609,7 @@ func portRangeSchema() *schema.Schema {
 
 func resourceSecurityRuleInstanceStateUpgradeV0(is map[string]interface{}, meta interface{}) (map[string]interface{}, error) {
 	log.Printf("[DEBUG] Entering resourceSecurityRuleInstanceStateUpgradeV0")
-	return resourceNutanixCategoriesMigrateState(is, meta)
+	return resourceNutanixCategoriesMigrateState(context.TODO(), is, meta)
 }
 
 func resourceNutanixSecurityRuleInstanceResourceV0() *schema.Resource {

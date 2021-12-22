@@ -903,7 +903,7 @@ func dataSourceNutanixClustersRead(d *schema.ResourceData, meta interface{}) err
 
 func resourceDatasourceClustersStateUpgradeV0(is map[string]interface{}, meta interface{}) (map[string]interface{}, error) {
 	log.Printf("[DEBUG] Entering resourceDatasourceClustersStateUpgradeV0")
-	return resourceNutanixCategoriesMigrateState(is, meta)
+	return resourceNutanixCategoriesMigrateState(context.TODO(), is, meta)
 }
 
 func resourceNutanixDatasourceClustersResourceV0() *schema.Resource {

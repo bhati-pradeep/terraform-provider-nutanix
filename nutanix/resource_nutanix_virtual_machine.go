@@ -2197,7 +2197,7 @@ func CountDiskListCdrom(dl []*v3.VMDisk) (int, error) {
 
 func resourceVirtualMachineInstanceStateUpgradeV0(is map[string]interface{}, meta interface{}) (map[string]interface{}, error) {
 	log.Printf("[DEBUG] Entering resourceVirtualMachineInstanceStateUpgradeV0")
-	return resourceNutanixCategoriesMigrateState(is, meta)
+	return resourceNutanixCategoriesMigrateState(context.TODO(), is, meta)
 }
 
 func setVMTimeout(meta interface{}) {

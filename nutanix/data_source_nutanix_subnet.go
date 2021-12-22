@@ -436,7 +436,7 @@ func dataSourceNutanixSubnetRead(d *schema.ResourceData, meta interface{}) error
 
 func resourceDatasourceSubnetStateUpgradeV0(is map[string]interface{}, meta interface{}) (map[string]interface{}, error) {
 	log.Printf("[DEBUG] Entering resourceDatasourceSubnetStateUpgradeV0")
-	return resourceNutanixCategoriesMigrateState(is, meta)
+	return resourceNutanixCategoriesMigrateState(context.TODO(), is, meta)
 }
 
 func resourceNutanixDatasourceSubnetResourceV0() *schema.Resource {

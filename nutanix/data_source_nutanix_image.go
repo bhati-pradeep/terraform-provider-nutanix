@@ -307,7 +307,7 @@ func findImageByName(conn *v3.Client, name string) (*v3.ImageIntentResponse, err
 
 func resourceDatasourceImageInstanceStateUpgradeV0(is map[string]interface{}, meta interface{}) (map[string]interface{}, error) {
 	log.Printf("[DEBUG] Entering resourceDatasourceImageInstanceStateUpgradeV0")
-	return resourceNutanixCategoriesMigrateState(is, meta)
+	return resourceNutanixCategoriesMigrateState(context.TODO(), is, meta)
 }
 
 func resourceNutanixDatasourceImageInstanceResourceV0() *schema.Resource {

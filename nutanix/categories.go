@@ -1,7 +1,7 @@
 package nutanix
 
 import (
-	"github.com/hashicorp/terraform-plugin-sdk/v2/internal/helper/hashcode"
+	"github.com/hashicorp/terraform-plugin-sdk/v1/internal/helper/hashcode"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 

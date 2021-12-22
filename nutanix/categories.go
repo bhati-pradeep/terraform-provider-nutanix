@@ -1,8 +1,8 @@
 package nutanix
 
 import (
-	"github.com/hashicorp/terraform-plugin-sdk/internal/helper/hashcode"
-	"github.com/hashicorp/terraform-plugin-sdk/helper/schema"
+	"github.com/hashicorp/terraform-plugin-sdk/v2/internal/helper/hashcode"
+	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 )
 
 func categoriesSchema() *schema.Schema {
